@@ -1,0 +1,31 @@
+.swiper__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.swiper__items{
+    padding: 5px;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -41.9%, #ffffff31 115.68%);;
+}
+.swiper__items h4{
+font-weight: 700;
+font-size: 25px;
+line-height: 125%;
+letter-spacing: 0%;
+text-align: center;
+color: #fff;
+}
+.swiper__items p{
+font-weight: 600;
+font-size: 16px;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: center;
+color: #fff;
+}
+.swiper__items img{
+    display: flex; 
+    margin: 0 auto;
+}

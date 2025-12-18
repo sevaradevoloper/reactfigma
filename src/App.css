@@ -14,7 +14,7 @@
 /* 1. O'zgaruvchilar (Variables) - Dizayndagi asosiy ranglar */
 :root {
   /* Fon ranglari */
-  --bg-color: #0a1320fd;         /* Juda to'q ko'k/qora fon */
+  --bg-color: #091931;         /* Juda to'q ko'k/qora fon */
   --surface-color: #11141d;    /* Kartochkalar va menyular uchun */
   
   /* Asosiy ranglar (Accent Colors) */
