@@ -1,0 +1,140 @@
+.hero {
+    padding-top: 140px; 
+    padding-bottom: 80px;
+    background-color: var(--bg-color-header);
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero__box {
+    max-width: 600px;
+}
+
+.hero__subtitle {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero__title {
+    font-size: 56px;
+    line-height: 1.2;
+    color: var(--text-primary);
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.hero__title .highlight {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-secondary); /* Text Outline effekti */
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.hero__text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 20px;
+}
+.btn-primary {
+    padding: 15px 35px;
+    background: var(--primary-glow);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-secondary {
+    padding: 15px 35px;
+    background: transparent;
+    color: white;
+    border: 2px solid var(--primary-glow);
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(58, 104, 184, 0.4);
+}
+
+/* Rasm qismi va Animatsiya */
+.hero__image-side {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 500px;
+    animation: floating 3s ease-in-out infinite; /* Uchish effekti */
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 38px;
+    }
+
+    .hero__text{
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+    }
+    
+    .hero__img {
+        max-width: 350px;
+    }
+}
+
+.marquee-container {
+    background:none; 
+    padding: 30px 0;
+}
+
+.marquee-img {
+    height: 40px; 
+    margin: 0 50px;
+    filter: grayscale(100%); 
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.marquee-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}

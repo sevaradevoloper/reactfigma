@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.conatiner{
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+/* 1. O'zgaruvchilar (Variables) - Dizayndagi asosiy ranglar */
+:root {
+  /* Fon ranglari */
+  --bg-color: #0a1320fd;         /* Juda to'q ko'k/qora fon */
+  --surface-color: #11141d;    /* Kartochkalar va menyular uchun */
+  
+  /* Asosiy ranglar (Accent Colors) */
+  --primary-glow: #00d2ff;     /* Neon moviy */
+  --secondary-glow: #9d50bb;   /* Binafsha rang */
+  --accent-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  
+  /* Matn ranglari */
+  --text-primary: #ffffff;     /* Asosiy matn */
+  --text-secondary: #94a3b8;   /* Yordamchi matn (kulrang) */
+  
+  /* Masofalar va o'lchamlar */
+  --container-width: 1200px;
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+ 
+}
+
+/* 3. Typografiya (Sarlavhalar) */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
