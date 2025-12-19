@@ -22,7 +22,7 @@ export default function Swiper() {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: true, // Avtomatik aylanishni yoqing (tekshirish uchun)
+    autoplay: true,
     autoplaySpeed: 2000,
   };
 
