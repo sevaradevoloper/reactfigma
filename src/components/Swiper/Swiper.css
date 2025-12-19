@@ -1,31 +1,92 @@
-.swiper__list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+.swiper-section {
+    padding: 100px 0; 
+    position: relative;
+    z-index: 10;
+    display: block !important; 
 }
-.swiper__items{
-    padding: 5px;
-    backdrop-filter: blur(30px);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -41.9%, #ffffff31 115.68%);;
-}
-.swiper__items h4{
-font-weight: 700;
-font-size: 25px;
-line-height: 125%;
-letter-spacing: 0%;
-text-align: center;
-color: #fff;
-}
-.swiper__items p{
-font-weight: 600;
-font-size: 16px;
-line-height: 160%;
-letter-spacing: 0%;
-text-align: center;
-color: #fff;
-}
-.swiper__items img{
-    display: flex; 
+
+.container {
+    max-width: 1200px;
     margin: 0 auto;
+    overflow: visible; 
+}
+.slick-slide > div {
+    margin: 10px 10px;
+}
+
+.swiper__item {
+    background: #11141d;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: all 0.4s ease;
+    max-width: 500px;
+    min-height: 350px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper__item:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-glow);
+    box-shadow: 0 10px 30px rgba(58, 104, 184, 0.2);
+}
+
+.swiper__item img {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 10px var(--primary-glow));
+}
+
+.swiper__item h4 {
+    color: var(--text-primary);
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.swiper__item p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li button:before {
+    color: var(--primary-glow) !important;
+    font-size: 12px;
+    opacity: 0.3;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--text-secondary) !important;
+    opacity: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--primary-glow);
+    font-size: 30px;
+}
+
+.slick-prev {
+    left: -40px;
+}
+
+.slick-next {
+    right: -40px;
+}
+@media (max-width: 768px) {
+    .slick-prev, .slick-next {
+        display: none !important; 
+    }
+    .swiper__item {
+        padding: 30px 20px;
+    }
 }
