@@ -147,6 +147,10 @@ body {
     .hamburger {
         display: flex;
     }
+    .header__container{
+        display: flex;
+        gap: 105px;
+    }
     .header__nav {
         position: fixed;
         top: -100%; 
