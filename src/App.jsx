@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero.jsx';
 import Section from './components/Section/Section.jsx';
 import Swiper from './components/Swiper/Swiper.jsx';
 import Testimonilas from './components/Testimonilas/Testimonilas.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import './App.css';
 
 function App() {
@@ -11,13 +12,13 @@ function App() {
       <Header />
 
       <main>
-         
           <Hero /> 
           <Section />
           <Swiper />
           <Testimonilas/>
       </main>
-
+      
+        <Footer/>
     </>
   );
 }

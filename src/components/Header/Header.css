@@ -59,7 +59,7 @@ body {
     font-weight: 600;
     font-size: 22.55px;
     line-height: 1;
-    color: var(--text-secondary);
+    color: #3A68B8;
     transition: var(--transition);
 }
 
@@ -76,7 +76,7 @@ body {
 .header__nav {
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 200px;
 }
 
 .header__list {
@@ -109,10 +109,8 @@ body {
 .header__link:hover::after {
     width: 100%;
 }
-
-/* 6. TUGMA (LOGIN) */
 .header__btn {
-    padding: 15px 35px;
+    padding: 15px 55px;
     border: none;
     border-radius: var(--border-radius);
     font-weight: 700;
@@ -128,14 +126,12 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(58, 104, 184, 0.6);
 }
-
-/* 7. HAMBURGER (DESKTOPDA YASHIRILADI) */
 .hamburger {
     display: none;
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
-    z-index: 1100; /* Menyudan tepada turishi uchun */
+    z-index: 1100; 
 }
 
 .hamburger div {
